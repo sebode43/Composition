@@ -21,6 +21,35 @@ namespace Composition {
             };
         }
 
+        public string GetModelName() {
+            return Model switch
+            {
+                ModelType.Bronse => "Bronse",
+                ModelType.Silver => "Silver",
+                ModelType.Gold => "Gold",
+                _=> "No Medal Found"
+            };
+        }
+
+        public string GetStateName() {
+            var stateName = "";
+            switch (Model) {
+                case ModelType.Gold:
+                    stateName = "Ohio";
+                    break;
+                case ModelType.Silver:
+                    stateName = "Indiana";
+                    break;
+                case ModelType.Bronse:
+                    stateName = "Kentucky";
+                    break;
+                default:
+                    stateName = "No State Name Found";
+                    break;
+            }
+            return stateName;
+        }
+
         public Product() { }
     }
 }

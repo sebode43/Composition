@@ -6,6 +6,8 @@ namespace Composition {
         public interface IProduct {
 
             public double GetPrice();
+            public string GetModelName();
+            public string GetStateName();
 
         }
 

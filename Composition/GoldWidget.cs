@@ -14,6 +14,16 @@ namespace Composition {
            
         }
 
+        public string GetModelName() {
+            return Product.GetModelName();
+
+        }
+
+        public string GetStateName() {
+            return Product.GetStateName();
+
+        }
+
         public GoldWidget() {
             Product = new Product() {
                 Code = "GW", Name = "GoldW", Model = ModelType.Gold

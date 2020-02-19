@@ -12,6 +12,16 @@ namespace Composition {
 
         }
 
+        public string GetModelName() {
+            return Product.GetModelName();
+
+        }
+
+        public string GetStateName() {
+            return Product.GetStateName();
+
+        }
+
         public SilverWidget() {
             Product = new Product() {
                 Code = "SW", Name = "SilverW", Model = ModelType.Silver

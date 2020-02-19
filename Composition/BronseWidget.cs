@@ -12,6 +12,16 @@ namespace Composition {
 
         }
 
+        public string GetModelName() {
+            return Product.GetModelName();
+
+        }
+
+        public string GetStateName() {
+            return Product.GetStateName();
+
+        }
+
         public BronseWidget() {
             Product = new Product() {
                 Code = "BW", Name = "BronseW", Model = ModelType.Bronse
